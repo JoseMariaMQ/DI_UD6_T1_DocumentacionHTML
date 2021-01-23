@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de usuario - Microsoft To Do</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style_usuario.css">
+  <link rel="stylesheet" href="css/base.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+  <!--Inicio de la cabecera-->
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__img" src="img/logo.svg" alt="logo">
+    </div>
+    <div class="header__title">
+      <h1 class="title">Manual de usuario - Microsoft To Do</h1>
+    </div>
+  </header>
+  <!--Fin de la cabecera-->
+  <!--Inicio del cuerpo de la página-->
+  <main class="main">
+    <!--Sección portada-->
+    <section class="portada">
+      <div class="portada__logo">
+        <img class="portada__img" src="img/to-do.png" alt="to-do">
+      </div>
+      <div class="portada__titulo">
+        <h1 class="portada__titulo">Microsoft To-Do</h1>
+      </div>
+    </section>
+    <!--Fin sección portada-->
+    <!--Inicio sección título-->
+    <section class="titulo">
+      <div class="titulo__nombre">
+        <h2>Manual de Usuario</h2>
+      </div>
+      <div class="titulo__version">
+        <p>Versión: 1.0</p>
+        <p>Fecha: 22/01/2020</p>
+      </div>
+    </section>
+    <!--Fin sección título-->
+    <!--Inicio sección derechos de autor-->
+    <section class="derechos">
+      <p>Queda prohibido cualquier tipo de explotación y, en particular, la reproducción, distribución, comunicación
+        pública y/o transformación, total o parcial, por cualquier medio, de este documento sin el previo consentimiento
+        expreso y por escrito de Tecnóloga Tritech.</p>
+    </section>
+    <!--Fin sección derechos de autor-->
+    <!--Inicio sección prefacio-->
+    <section class="prefacio">
+      <p>Para la navegación por el manual de usuario puede consultar la sección de la página de contenido y dirigirse a
+        la parte de la explicación de la aplicación en la que necesite información respecto a su uso pulsando sobre el
+        texto que lo indica en la página de contenido.</p>
+    </section>
+    <!--Fin sección prefacio-->
+    <!--Inicio sección página de contenido-->
+    <section class="contenido">
+      <div class="contenido__titulo">
+        <h1>Página de contenido</h1>
+      </div>
+      <div class="contenido__lista">
+        <ul class="contenido__lista">
+          <li><a href="#guia-usuario">Guía de usuario</a>
+            <ul>
+              <li><a href="#guia-introduccion">Introducción</a>
+                <ul>
+                  <li><a href="#guia-iniciar">Iniciar sesión</a></li>
+                  <li><a href="#guia-sugerencias">Mi día y sugerencias</a></li>
+                </ul>
+              </li>
+              <li><a href="#guia-tareas">Crear, editar, eliminar y restaurar tareas</a>
+                <ul>
+                  <li><a href="#guia-crear">Crear una tarea</a></li>
+                  <li><a href="#guia-editar">Editar una tarea</a></li>
+                  <li><a href="#guia-eliminar">Eliminar una tarea</a></li>
+                  <li><a href="#guia-restaurar">Restaurar una tarea eliminada</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#problemas-solucionar">Solucionar problemas</a>
+            <ul>
+              <li><a href="#problemas-cambios">Cambios en el acceso de Microsoft To Do para las cuentas de Exchange locales</a></li>
+            </ul>
+          </li>
+          <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a>
+            <ul>
+              <li><a href="#preguntas-sentimos">¿Por qué recibo el mensaje de error "Lo sentimos, pero no es posible iniciar sesión ahora mismo"?</a></li>
+              <li><a href="#preguntas-licencia">¿Por qué recibo el mensaje de que mi licencia de to do está deshabilitada?</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--Fin sección pagina de contenido-->
+    <!--Inicio sección guía de usuario-->
+    <section class="guia" id="guia">
+      <div class="guia__titulo" id="guia-usuario">
+        <h1>Guía de usuario</h1>
+      </div>
+      <!--Introducción guía de usuario-->
+      <div class="guia__titulo" id="guia-introduccion">
+        <h2>Introducción <button id="boton-introduccion"><i class="fas fa-toggle-on" id="toggle-introduccion"></i></button></h2>
+      </div>
+      <div class="guia__introduccion" id="introduccion">
+        <!--Presentación de la aplicación-->
+        <div class="guia__presentacion">
+          <p>Microsoft To Do es una lista de tareas pendientes, simple e inteligente, que le ayuda a administrar todas las
+            tareas en un solo lugar. Puede trabajar con las tareas para el día de mi día y crear cualquier número de
+            listas adicionales para organizar el trabajo, las comestibles, los viajes, las compras, las películas que se
+            deben vigilar.</p>
+          <p>Puede agregar tantas tareas como desee a cada lista. Para mantener todo en seguimiento, establezca fechas de
+            vencimiento y recordatorios para cada tarea y protagonista las tareas más importantes. Use los pasos para
+            dividir las tareas más grandes en secciones y notas más manejables para grabar detalles adicionales. Puesto
+            que todas sus tareas se almacenan en servidores de Exchange Online, también aparecerán de forma automática en
+            las Tareas de Outlook. </p>
+        </div>
+        <!--Inicio de sesión de la aplicación-->
+        <div class="guia__inicio" id="guia-iniciar">
+          <h3>Iniciar sesión</h3>
+          <p>Lo primero que tenemos que hacer es iniciar sesión si ya tenemos cuenta o registrarnos para poder utilizar
+          todas las ventajas de tener compartido los datos de cada lista en cada dispositivo que tengamos instalada la
+          aplicación.</p>
+          <p>Introducimos nuestro correo electrónico.</p>
+          <img class="guia__img1" src="img/inicio-sesion.png" alt="Inicio sesión">
+          <p>Introducimos la contraseña.</p>
+          <img class="guia__img1" src="img/inicio-sesion2.png" alt="Inicio sesión">
+          <p>Elegimos la opción que más nos interese.</p>
+          <img class="guia__img1" src="img/inicio-sesion3.png" alt="Inicio sesión">
+          <p>Una vez iniciada la sesión nos aparecerá la ventana principal de Microsoft To Do.</p>
+          <img class="guia__img2" src="img/ventana-inicio.png" alt="Ventana de inicio">
+        </div>
+        <div class="guia__sugerencias" id="guia-sugerencias">
+          <h3>Mi día y sugerencias</h3>
+          <p>Use mi día para centrarse en las tareas diarias. Puede agregar nuevas tareas directamente a mi día o
+            agregar tareas de otras listas seleccionando una tarea para ver sus detalles y, a continuación,
+            seleccionando <strong>Agregar a mi día</strong>. También puede usar sugerencias para seleccionar tareas para
+            agregarlas a mi día. Para ver las tareas sugeridas, seleccione el icono de sugerencias <i class="far fa-lightbulb"></i>
+            en la parte superior de la lista mi día. </p>
+          <p>La lista inteligente mi día se restablece todas las noches, por lo que tendrá una pizarra en blanco para
+            agregar las tareas que desee realizar cada día. Las tareas de mi día que no se hayan completado antes de que
+            se reestablezca la lista se guardarán en la lista de tareas y se incluirán en las sugerencias el día
+            siguiente. </p>
+        </div>
+      </div>
+      <!--Fin introducción guía de usuario-->
+      <!--Crear, editar, eliminar y restaurar tareas-->
+      <div class="guia__titulo" id="guia-tareas">
+        <h2>Crear, editar, eliminar y restaurar tareas <button id="boton-tareas"><i class="fas fa-toggle-on" id="toggle-tareas"></i></button></h2>
+      </div>
+      <div class="guia__tareas" id="tareas">
+        <div class="guia__crear" id="guia-crear">
+          <h3>Crear una tarea</h3>
+          <p>Puede crear una tarea en el campo <strong>+ Agregar una tarea</strong> de entrada en cualquiera de las
+            listas. Seleccione el campo, escriba el título de la tarea y presione retorno o entrar. Entonces, la tarea
+            nueva se agregará a la parte inferior de la lista.</p>
+          <img src="img/agregar-tarea.png" alt="Agregar tarea" class="guia__img2">
+        </div>
+        <div class="guia__editar" id="guia-editar">
+          <h3>Editar una tarea</h3>
+          <p>Para cambiar el nombre de una tarea, seleccione la tarea para abrir su vista de detalles. Una vez en la
+            vista de detalles, puede hacer clic o pulsar en el título de la tarea. Aparecerá un cursor en el campo
+            título de la tarea y podrá cambiarle el nombre o editarlo.</p>
+          <img src="img/editar-tarea.png" alt="Editar tarea" class="guia__img1">
+        </div>
+        <div class="guia__eliminar" id="guia-eliminar">
+          <h3>Eliminar una tarea</h3>
+          <p>Para eliminar una tarea, seleccione el icono de papelera en la esquina inferior derecha de la vista de
+            detalles de la tarea. O bien, si ha activado menús contextuales en la configuración, puede hacer clic con
+            el botón derecho y seleccionar <strong>liminar tarea seleccionada</strong> si se encuentra en el escritorio.
+            En Android e iOS, puede deslizar el dedo de derecha a izquierda para eliminar.</p>
+          <img src="img/eliminar-tarea.png" alt="Eliminar tarea" class="guia__img1">
+        </div>
+        <div class="guia__restaurar" id="guia-restaurar">
+          <h3>Restaurar una tarea eliminada</h3>
+          <p>Puesto que sus tareas se almacenan en Exchange Online y también son visibles en las Tareas de Outlook,
+            puede recuperar las tareas que haya eliminado por accidente en Outlook.</p>
+          <ol>
+            <li>Inicie sesión en Outlook en el escritorio con la misma cuenta de Microsoft que usa con Microsoft To Do.</li>
+            <li>Vaya a la lista de carpetas de correo electrónico y seleccione elementos eliminados.</li>
+            <li>Busque la tarea eliminada, haga clic en ella con el botón secundario y, a continuación, seleccione mover > otra carpeta > tareas.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!--Fin sección guia de usuario-->
+    <!--Inicio sección solución de problemas-->
+    <section class="problemas">
+      <div class="problemas__titulo" id="problemas-solucionar">
+        <h1>Solucionar problemas</h1>
+      </div>
+      <div class="problemas__titulo" id="problemas-cambios">
+        <h2>Cambios en el acceso de Microsoft To Do para las cuentas de Exchange locales <button id="boton-problemas"><i class="fas fa-toggle-on" id="toggle-problemas"></i></button></h2>
+      </div>
+      <div class="problemas__cambios" id="problemas">
+        <p>A partir del 22 de enero de 2021, todos los usuarios de To Do o la aplicación Tareas de Teams con un buzón
+          local solo podrán iniciar sesión en To Do en la web. No podrá iniciar sesión en To Do en Android, iOS, Mac o
+          Windows. En To Do en la web, podrá ver las listas y tareas, pero no se guardará todo lo que edite o agregue.</p>
+        <p>A partir del 22 de febrero de 2021, todos los usuarios con un buzón local no podrán iniciar sesión en To Do en
+          ninguna plataforma. Asegúrese de hacer una copia de seguridad de los datos de To Do antes. Puede imprimir las
+          listas o guardarlas como archivos PDF. Una vez que su organización haya movido su buzón a la nube, podrá
+          iniciar sesión en To Do y volver a escribir manualmente la información que guardó.</p>
+      </div>
+    </section>
+    <!--Fin sección solución de problemas-->
+    <!--Inicio sección preguntas frecuentes-->
+    <section class="preguntas">
+      <div class="preguntas__titulo" id="preguntas-frecuentes">
+        <h1>Preguntas frecuentes</h1>
+      </div>
+      <div class="preguntas__titulo" id="preguntas-sentimos">
+        <h2>¿Por qué recibo el mensaje de error "Lo sentimos, pero no es posible iniciar sesión ahora mismo"? <button id="boton-preguntas1"><i class="fas fa-toggle-on" id="toggle-preguntas1"></i></button></h2>
+      </div>
+      <div class="preguntas__error" id="preguntas1">
+        <p>Cuando intenta iniciar sesión en Microsoft To Do con una cuenta profesional y aparece el mensaje de error:</p>
+        <p><strong>"Lo sentimos, pero no es posible iniciar sesión ahora mismo. Inténtelo de nuevo y póngase en contacto
+          con el soporte técnico si el problema persiste".</strong>, junto con un código de error, como:</p>
+        <p><strong>AadUnknownError</strong></p>
+        <p><strong>0x80070520</strong></p>
+        <p><strong>0xc0292007</strong></p>
+        <p>o algo parecido, pruebe lo siguiente:</p>
+        <ul>
+          <li>Vaya a Configuración de Windows > Actualización y seguridad > Buscar actualizaciones de Windows</li>
+          <li>Intente reiniciar el equipo PC o dispositivo móvil</li>
+        </ul>
+        <p>Después, intente iniciar sesión en Microsoft To Do de nuevo. En la mayoría de los casos, esto debería ayudar
+          a resolver el problema. En caso de que el error persista, envíenos un mensaje <a href="">aquí.</a></p>
+      </div>
+      <div class="preguntas__titulo" id="preguntas-licencia">
+        <h2>¿Por qué recibo el mensaje de que mi licencia de to do está deshabilitada? <button id="boton-preguntas2"><i class="fas fa-toggle-on" id="toggle-preguntas2"></i></button></h2>
+      </div>
+      <div class="preguntas__error" id="preguntas2">
+        <p>Su plan deMicrosoft 365 incluye licencias de nivel de usuario para Microsoft To Do, que su administrador
+          puede usar para administrar el acceso individual a las aplicaciones de To Do. Si su administrador ha optado
+          por deshabilitar su licencia paraMicrosoft To Do, incluso temporalmente, no podrá usarla. Si cree que ha
+          recibido este mensaje por error o desea obtener más información sobre cómo obtener acceso a Microsoft To Do,
+          póngase en contacto con su administrador de TI para obtener ayuda.</p>
+      </div>
+    </section>
+    <section class="indice"></section>
+  </main>
+  <footer class="footer">
+    <div class="footer__info">
+      <p>Copyright&copy; 2021. All rights reserved. Design - JoseMariaMQ</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

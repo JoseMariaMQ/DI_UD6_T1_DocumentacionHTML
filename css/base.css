@@ -1,0 +1,9 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+
+  color: #2C2C2C;
+  min-height: 100vh;
+  font-family: Montserrat, sans-serif;
+}
